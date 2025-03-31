@@ -17,13 +17,19 @@ jobs:
         run: npm install
 
       - name: Run unit tests
-        run: npm test:unit
-
-      - name: Run e2e tests
-        run: npm test:e2e
+        run: npm run test:unit
 
       - name: Build project
         run: npm run build
+
+      #- name: Check available browsers
+      #  run: npx cypress info
+
+      #- name: Debug Vite Preview
+      #  run: npm run dev & sleep 5 && curl -I http://localhost:3000 || true
+
+      - name: Run e2e tests
+        run: npm run test:e2e
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v4

@@ -6,6 +6,14 @@ import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
   base: './',
+  server: {
+    host: 'localhost',
+    port: 3000, // Port dev
+  },
+  preview: {
+    host: 'localhost', // Host pour `vite preview`
+    port: 4173, // Port pour `vite preview`
+  },
   plugins: [
     tailwindcss(),
     vue(),
