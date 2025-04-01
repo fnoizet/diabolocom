@@ -18,7 +18,7 @@
 </template>
 <script setup lang="ts">
 import type { Notification } from '@/definitions';
-import { useNotificationStore } from '@/stores/useNotificationStore';
+import { useNotificationStore } from '@/components/notification/useNotificationStore';
 import { ButtonGroup, Button } from 'primevue';
 import { ref } from 'vue';
 

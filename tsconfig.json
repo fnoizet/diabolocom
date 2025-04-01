@@ -12,6 +12,14 @@
     }
   ],
   "compilerOptions": {
-    "module": "NodeNext"
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "target": "ESNext",
+    "outDir": "./dist",
+    "declaration": true,
+    "sourceMap": false,
+    "strict": true,
+    "removeComments": true,
+    "esModuleInterop": true
   }
 }

@@ -7,15 +7,3 @@ export interface Notification {
     timestamp: number;
     read: boolean;
 }
-
-export interface NotificationStore {
-    notifications: Notification[];
-    addNotification: (notification: Omit<Notification, 'id' | 'timestamp' | 'read'>) => Notification;
-    removeNotification: (id: string) => void;
-    markAsRead: (id: string) => void;
-    deleteNotification: (id: string) => void;
-    getUnreadCount: (namespace: string) => number;
-    getNotifications: () => Notification[];
-    getNotificationsByNamespace: (namespace: string) => Notification[];
-    clearNotifications: (namespace?: string) => void
-}

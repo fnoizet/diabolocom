@@ -20,7 +20,7 @@ describe('useNotificationStore tests', () => {
     const store = useNotificationStore();
     store.clearNotifications();
     const newNotif = store.addNotification({ namespace: 'app', title: 'Test Notification', description: 'This is a test notification', type: 'info' });
-    store.removeNotification(newNotif.id);
+    store.deleteNotification(newNotif.id);
     expect(store.getNotifications()).toHaveLength(0);
   });
 

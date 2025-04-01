@@ -12,6 +12,7 @@
     "test:e2e": "start-server-and-test 'npm run preview' http://localhost:4173 'cypress run --e2e'",
     "test:e2e:dev": "start-server-and-test 'npm run dev' http://localhost:3000 'cypress open --e2e'",
     "build-only": "vite build",
+    "build-lib": "vite build --mode lib",
     "type-check": "vue-tsc --build"
   },
   "dependencies": {

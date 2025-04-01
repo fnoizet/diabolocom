@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module">
+        import notificationWidget from "./notification-widget.es.mjs";
+    </script>
+    <style type="text/css">
+        .container {
+            display: flex;
+            gap: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <cc-notification-widget data-namespace="app"></cc-notification-widget>
+        <cc-notification-widget data-namespace="mobile"></cc-notification-widget>
+        <cc-notification-widget data-namespace="mobile"></cc-notification-widget>
+        <cc-notification-widget data-namespace="message"></cc-notification-widget>
+    </div>
+</body>
+</html>

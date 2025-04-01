@@ -18,7 +18,7 @@
     </Card>
 </template>
 <script setup lang="ts">
-import { useNotificationStore } from '@/stores/useNotificationStore';
+import { useNotificationStore } from '@/components/notification/useNotificationStore';
 import { Badge, Button, Card } from 'primevue';
 import { computed } from 'vue';
 import Notification from './Notification.vue';

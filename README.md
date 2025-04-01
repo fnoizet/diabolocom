@@ -1,6 +1,18 @@
-# diablocom
+# test technique diablocom
 
 This template should help get you started developing with Vue 3 in Vite.
+
+## Usage
+
+```html
+<script>
+    import "path/to/lib/notification-widget.es.mjs"
+</script>
+<cc-notification-widget data-namespace="ANY_NAMESPACE"></cc-notification-widget>
+```
+
+# ⚠️ Code destiné uniquement à un test technique ⚠️
+This code is provided for evaluation by Diabolocom, and cannot be reused without authorization.
 
 ## Recommended IDE Setup
 
