@@ -5,6 +5,8 @@ import vue from '@vitejs/plugin-vue'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig(({ mode }) => {
+  const isLibMode = mode === 'lib';
+
   return {
     base: './',
     server: {
@@ -39,7 +41,7 @@ export default defineConfig(({ mode }) => {
           manualChunks: undefined,
         }
       },
-      ...(mode === "lib"
+      ...(isLibMode
         ? {
           outDir: './dist/lib',
           lib: {
